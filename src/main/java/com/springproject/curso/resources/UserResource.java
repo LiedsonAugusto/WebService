@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.springproject.curso.entities.User;
 
 
-@RestController // recurso web implementada por um controlador rest
-@RequestMapping(value="/users") //caminho localhost:8080/users
+@RestController //recurso web implementada por um controlador rest
+@RequestMapping(value="/users") // setando caminho para localhost:8080/users
 public class UserResource {
 
 	@GetMapping // método que responde a requisição get do http
@@ -17,5 +17,4 @@ public class UserResource {
 		User u = new User(1L, "aaaa", "aaa@gmail.com", "9999", "12345");
 		return ResponseEntity.ok().body(u); // retorna User feita a requisição
 	}
-	
 }
