@@ -28,7 +28,6 @@ public class OrderItem {
 		this.quantity = quantity;
 		this.price = price;
 	}
-	
 	public Product getProduct() {
 		return id.getProduct();
 	}
