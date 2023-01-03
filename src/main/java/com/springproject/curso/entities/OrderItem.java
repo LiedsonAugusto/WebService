@@ -65,6 +65,10 @@ public class OrderItem {
 		return Objects.hash(id);
 	}
 
+	public Double getSubTotal() {
+		return this.price * this.quantity;
+	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
